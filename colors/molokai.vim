@@ -136,12 +136,12 @@ end
 "
 if &t_Co > 255
    if s:molokai_original == 1
-      hi Normal                   ctermbg=234
+      hi Normal                   ctermbg=0
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    else
       hi Normal       ctermfg=252 ctermbg=233
-      hi CursorLine               ctermbg=234   cterm=none
+      hi CursorLine               ctermbg=0   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    endif
    hi Boolean         ctermfg=135
@@ -271,6 +271,6 @@ if &t_Co > 255
    endif
 end
 
-" Must be at the end, because of ctermbg=234 bug.
+" Must be at the end, because of ctermbg=0 bug.
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
